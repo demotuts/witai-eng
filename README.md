@@ -16,26 +16,23 @@ You'll only need :
 2. [wit.ai](http://wit.ai/) account.
 3. [glitch.com](http://glitch.com/) account.
 
-
 ## Goals : 
-في هذه المقالة ستتعلم و بصورة سهلة و لا تتطلب اي خبرة سابقة طريقة تجهيز روبوت دردشة  باستخدام منصة wit.ai 
-سنقوم بصنع روبوت يرد على أسئلة عملاء شركة و همية ، سنسميها سفريات السلامة .
-ربط Facebook Messenger مع روبوت الدردشة للرد تلقائيا على الأسئلة الواردة 
+Chatbots are considered one of the most successful customer service tools, it is also free using wit.ai free Natural Language Processing (NLP) frameork.
 
-تعد روبوتات الدردشة من انجح وسائل خدمة العملاء و الرد على استفساراتهم كما انها مجانية
-يقدم فيسبوك خدمة wit.ai المجانية و التي تمكنك في خطوات بسيطة من نشر روبوت دردشة يتمتع بالذكاء الصناعي
+In this tutorial we will create a chatbot in easy and simple steps using wit.ai
+The chatbot will automatically answer questions from the customers of a fictional bus operator which we will call Safety Travels.
+These questions will be posed by customers using Facebook Messenger.
 
-
-## الخطوات:
-### 1. إنشاء روبوت الى على منصة wit.ai
-### 2. إنشاء صفحة على فيسبوك
-### 3. تهئة تطبيق على فيسبوك للرد على محادثات ال Messenger
-### 4. نسخ و لصق تطبيق على منصة glitch.com لربط الروبوت مع ال Messenger
-### 5. اختبار الربوت باستخدام Facebook messenger
+## Steps:
+### 1. Creating an app on wit.ai
+### 2. Creating a Facebook page
+### 3. Creating a Facebook App that uses Messenger
+### 4. Cloning a glitch.com projeict that will connect wit.ai with messanger Messenger service
+### 5. Testing our bot using Facebook messenger
 
 ***
 
-### 1. إنشاء روبوت الى على منصة wit.ai
+### 1. Creating an app on wit.ai
 
 ما فائدة wit.ai هنا ؟ 
 
@@ -124,7 +121,7 @@ You'll only need :
 
 ***
 
-### 2. إنشاء صفحة على فيسبوك
+### 2. Creating a Facebook page
 
 ما فائدة هذه الخطوة؟
 
@@ -141,7 +138,7 @@ https://www.facebook.com/pages/creation
 
 ***
 
-### 3. تهيئة تطبيق على فيسبوك للرد على محادثات ال Messenger
+### 3. Creating a Facebook App that uses Messenger
 
 ما فائدة هذه الخطوة؟
 
@@ -191,7 +188,7 @@ https://developers.facebook.com/apps/
 
 ***
 
-### 4. نسخ و لصق تطبيق على منصة glitch.com لربط الروبوت مع ال Messenger
+### 4. Cloning a glitch.com projeict that will connect wit.ai with messanger Messenger service
 
 ما فائدة هذه الخطوة؟
 
@@ -416,7 +413,8 @@ https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.4
 
 ***
 
-### 5. اختبار الربوت باستخدام Facebook messenger
+### 5. Testing our bot using Facebook messenger
+
 الان و بعد ان قمت بكل هذا المجهود ، بامكانك قطف ثماره
 ارجع الى صفحة Facebook التي أنشأتها و اضغط على "View As Visitor"
 
@@ -445,17 +443,6 @@ What's the distance between Beirut and Amman
 ### اضافات اختيارية للروبوت 
 بامكانك تطوير هذا الروبوت باستخدامه للتواصل مع عملائك على تويتر ، تليجرام او اي منصة اخرى
 كما تتمتع روبوتات wit.ai بخاصية الاستجابة للاوامرالصوتية ، بدلا من كتابة الرسائل النصية.
-
-كما اسلفنا سابقا فأن wit.ai تدعم اكثر من ١٣٠ لغة ، قد تود تجربة اعداد تطبيقك للتجاوب للأسئلة المكتوبة او المنطوقة باللغة العربية
-
-[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%207.39.30%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%207.39.30%20PM.png)
-
-[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%207.49.49%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%207.49.49%20PM.png)
-
-[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%207.52.45%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%207.52.45%20PM.png)
-
-[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%208.04.03%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%208.04.03%20PM.png)
-
 
 ***
 
