@@ -153,6 +153,8 @@ https://developers.facebook.com/apps/
 و اضغط على "Create App"
 و أختار الاختيار الأول "Manage Business Integrations"
 
+This relates to the (A) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
+
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.55.45%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.55.45%20AM.png)
 
 أختار اسم للتطبيقك على فيسبوك ، غرض التطبيق هو الوصول الى المعلومات الخاصة  بك ، أي "App Purpose" "Yourself or your own business"
