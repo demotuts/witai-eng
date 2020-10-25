@@ -1,22 +1,23 @@
-# روبوت دردشة باستخدام wit.ai    
+# Chat bot with wit.ai and Facebook Messanger in under 10 minutes    
 
-[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%2012.45.28%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%2012.45.28%20PM.png)
+[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-25%20at%201.37.54%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-25%20at%201.37.54%20PM.png)
 
-MIT open source
+Licene : MIT open source
 
-## المستوى :
- متوسط
-## ألمتطلبات : 
+## Level :
+ Beginner / intermediate
+## Requirements : 
 
-> لا يتطلب اي خبرة سابقة في مجال روبوتات الدردشة
-> و لا حتى في مجال البرمجة
+>Does not require any chatbot developmenet expereince, does not require software development expereince
 
-1. حساب على  [Facebook.com](http://facebook.com/) 
-2. حساب على  [wit.ai](http://wit.ai/) 
-3. حساب على  [glitch.com](http://glitch.com/)  
+You'll only need :
+
+1. [Facebook.com](http://facebook.com/) account
+2. [wit.ai](http://wit.ai/) account.
+3. [glitch.com](http://glitch.com/) account.
 
 
-## الأهداف : 
+## Goals : 
 في هذه المقالة ستتعلم و بصورة سهلة و لا تتطلب اي خبرة سابقة طريقة تجهيز روبوت دردشة  باستخدام منصة wit.ai 
 سنقوم بصنع روبوت يرد على أسئلة عملاء شركة و همية ، سنسميها سفريات السلامة .
 ربط Facebook Messenger مع روبوت الدردشة للرد تلقائيا على الأسئلة الواردة 
