@@ -34,88 +34,88 @@ These questions will be posed by customers using Facebook Messenger.
 
 ### 1. Creating an app on wit.ai
 
-ما فائدة wit.ai هنا ؟ 
-
-من السهل ان نصنع روبوتا يرد على سؤال واحد مثل "ما هي المسافة من مسقط الى الكويت"
-دون استخدام اداة ذكاء اصطناعي مثل wit.ai ، لكن ماذا سيحدث ان سأل العميل "كم كيلو متر بين مسقط و الكويت؟" او ماذا يحدث ان سأل نفس السؤال بلغة اخرى؟
-هنا يأتي دور الذكاء الاصطناعي في تحليل جمل العميل المكتوبة او المنطوقة NLP Natural Language Processing ، و استخدام الذكاء الاصطناعي القابل للتدريب في فهم الجمل المشابهة ، و بعدة لغات ، و تصنيفها اذا ما كانت سؤال عن مكان او زمان او درجة حرارة .. الخ، لمساعدتك في طلب الاجابة الصحيحة . حيث يمكنك ربط wit.ai بنظام البيع مثلا للإجابة على أسئلة من قبيل "كم سعر التذكرة من مسقط الى الكويت؟"
+Why we're using wit.ai?
+It's easy to create a bot that answers a single question like "ًwhat's the distance between Chicago and Seattle?"
+But what if the users ask different variations of the question?
+Like for example "How many Miles between Chicago and Seattle?" our chatbot will fail if we don't include all those variations, luckily we don't have to go this route.
+We can simply use and train an NLP tool like wit.ai to respond to all variation of a questions  _**Utterances**_ by grouping them into ### _**Intents**_ , for example one intent for questions related to time "What's the time now in Boston?" or distance, tempreture, price etc. The intent output, will help us match the question asked with the relevant answers as we will see below.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%207.33.52%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%207.33.52%20AM.png)
 
-كما يمكنك تدريب النظام لزيادة دقة فهمه لما يقصده السائل، كما سيرد معنا لاحقا في هذه المقالة.
-خدمةwit.ai مجانية و متاحة للجميع.
+We can also train the wit.ai app with more variations of the questions to increase it's accuracy.
+wit.ai is free and open for all.
 
-بعد ان تسجل حسابا في خدمة wit.ai اشرع في إنشاء تطبيق جديد "New App"
+After you signup or login into wit.ai , create a "New App"
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%207.37.04%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%207.37.04%20PM.png)
 
-اختر اسما لتطبيقك ، كل ما يهم انه اسم لم يستخدم من قبل على منصة wit.ai و بالحروف اللاتينية
-
+and choose a unique name for your app
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.05.30%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.05.30%20PM.png)
 
+You will be greeted by "Train Your App" page
 
-ستظهر صفحة "Train Your App"
-هنا سنقوم بتدريب التطبيق على العبارات التي نتوقع ان يستخدمها العملاء في أسئلتهم Utterances
-
+Here you'll enter the questions that you expect the customers will ask "Utterances"
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.17.22%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.17.22%20PM.png)
 
+To understand what's going on on this page, let's reiterate again our goal here:
 
-لكي نفهم معا هذه الصفحة لنراجع معا ما هو هدفنا هنا ، نحن نريد ان "ندرب" wit.ai  على ان يتعرف على  ما يكتبه او ينطقه العميل ، و يستنتج ما الذي يقصده العميل ، هل يسأل عن الوقت ، هل يسأل عن مسافة؟ كما يستخلص التفاصيل التي تجعل من بحثنا عن اجابة اكثر دقة. إذا كما نرى في الرسم التوضيحي أدناه :
+we're training our wit.ai app to understand what the customer has typed , or said. Is the customer asking for the time? or is the customer asking for a distance?
+The app also extracts the details "Entities" that help us find a more accurate answers.
 
 ![](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%201.47.52%20PM.png)
 
 ### _**Utterance**_
- هي نماذج  من ما نتوقع ان يسألنا اياه العميل مثل "ما هي المسافة بين مسقط و الكويت؟"
+These are examples of what the customer might ask from our bot.
 
 ### _**Intent**_
- هو استنتاج الغرض من عبارة  العميل اعلاه ، في هذه الحالة نستنتج ان العميل يبحث عن مسافة بين موقعين . لكن الى الان لم نعرف التفاصيل ، في الوقت الراهن Wit.ai لا تعلم الموقعين الذين بحث عن المسافة بينهما.
-هنا يأتي دور 
+An intent is derived from the Utterance, so at this point we know the category of the questions, if it is about a time or a distance etc.
+But if it is a distance, we still don't have enough information to find an answer, the bot stilll don't know what distance the customer is asking about. This is why we have 
+ 
 ### _**Entities**_
-  و هي التفاصيل ، مسقط هي  Entity من نوع "موقع جغرافي" ، و كذلك "الكويت" هي Entity و من نوع "موقع".
+Entities are the details that will help us answer the customer's question, so if the customer is asking about the distance between Chicagk and Seattle, then Chicago is an Entity of type location, as well as Seattle.
 
-كذلك هو الحال حينما يسأل العميل عن الوقت لموقع جغرافي يحدده بالإسم
+It's the same when the customer asks about the time, the Entity here is of type location.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%201.47.19%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%201.47.19%20PM.png)
 
-هكذا عرفنا ما تحتاجه منصة wit.ai كي تتدرب على فهم أسئلة العملاء ، بالطبع كلما زادت النماذج التي ندخلها لتدريب التطبيق كلما زادت قدرة تطبيق wit.ai على استنتاج ما يقصده العميل. 
+Obviously the more Utterances we enter to train the wit.ai app the more the chatbot is able to guess what the customer needs to know.
 
-> ### ملاحظة : منصة wit.ai تدعم اكثر من ١٣٠ لغة من ضمنها الأسئلة باللغة العربية ، الا ان هذا الدعم ما زال في المرحلة التجريبية بيتا ، لذلك سنتعامل في هذه التطبيق مع الاسئلة باللغة الانجليزية .
+> ### wit.ai supports more than 130 languages
 
-الان لن تواجهنا اي مشكلة في اتباع الخطوات التالية في ادخال النماذج و تدريب تطبيقنا.
+After the above, we should faceno problem in following the coming steps to enter Utterances and train our wit.ai app
 
-نضيف بعض الأسئلة الخاصة بالمسافة بين مدينتين بصيغ منوعة
-و نسمي هذا ال Intent بإسم `distanceBetween` هذا مهم جدا ، لاننا سنتعامل مع كل Intent أو إستنتاج بصورة مختلفة
+we can enter some variations of questions asking for the distance between 2 locations.
 
-و نتأكد من تظليل اسماء المدن و اختيار Entity من نوع location
+Because we will handle each Intent differently we need to name each Intent a descriptive name, so Intents related to distance between 2 locations we will cal them `distanceBetween` it's very important to get them correctly.
+
+We make sure that we highlight city names in our Utterance, these are our Entities, choose type location
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.10.16%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.10.16%20PM.png)
 
-و كذلك أسئلة عن الوقت المحلي لبعض المدن
-و نسمي هذا ال Intent بإسم `timeAtPlace` 
-و أيضا و نتأكد من تظليل اسماء المدن و اختيار Entity من نوع location
+Let's also add Utterances/Questions about local time in few cities
+
+Let's name this Intent `timeAtPlace`
+Highlight the city, the city is our Entitiy and we select type location, if not auto detected.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.19.26%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.19.26%20PM.png)
 
-
-تدريب التطبيق على استنتاج مغزى الأسئلة يستغرق بضع ثواني الى بضع دقائق بعد ضفط زر
-"Train Your App"
-إنتظر حتى تتم علمية التدريب و من ثم 
-بإمكانك مراجعة ذلك من قسم ال intent و قسم الEntities من على يسار القائمة
+After you click "Train Your App" training takes between seconds to minutes
+Wait until training is complete then explore your Intents and Entities from the left menu to make sure that that they're all set correctly.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.20.38%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.20.38%20PM.png)
 
-كما يمكنك مراجعة 
-كافة النماذج التي تم التدريب عليها من قسم Utterance من القائمة على الجهة اليسرى
+
+You can also revise all the Utterances from the Utterances section on the left
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.22.59%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.22.59%20PM.png)
 
-تقوم wit.ai ايضا بتخزين سجل كل الاسئلة التي سـالها العملاء في السابق و كذلك الاستنتاجات من تلك الاسئلة ، وهذا مفيد جدا لاعادة تدريب تطبيقنا على wit.ai على استنتاج المقصود من تلك الاسئلة الشائعة.
+wit.ai also stores all the Utterances / Questions which your customers has asked, this is extremly useful in going in retraining and refining how your bot interperts the customers' questions.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%202.24.37%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%202.24.37%20PM.png)
 
-كل ما نحتاجه الان  من wit.ai هو الحصول على الرمز السري الذي يسمح لنا باستخدام التطبيق الذي أنشأناه توا من صفحة Settings
+All we need at this point is to copy and save the "Server Access Token" for our app, from the settings section, we will need this Access Token soon.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.23.21%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.23.21%20PM.png)
 
@@ -123,16 +123,16 @@ These questions will be posed by customers using Facebook Messenger.
 
 ### 2. Creating a Facebook page
 
-ما فائدة هذه الخطوة؟
+Why?
 
-كي يتمكن عملاء سفريات السلامة التواصل معنا بواسطة ال messenger سنحتاج لإنشاء صفحة خاصة بسفريات السلامة على فيسبوم (لن نقوم بإنشاء حساب شخصي جديد ان كنت من مستخدمي فيسبوك ، بل سنشئ صفحة جديدة تحت حسابك فيسبوك الخاص بك) عندها سيتمكن العملاء من ارسال استفساراتهم الى سفريات السلامة عبر ال messenger الخاص بصفحتها
+We will need to create a new Facebook page for our fictional company "Safet Travels", We do this because we want when the customers send Messenger messages to be assoicated with this page.
+To create a facebook page, visit the following link
 
-لأنشاء صفحة على فيسبوك اتجه لهذا العنوان 
 https://www.facebook.com/pages/creation
-اذا كنت من مستخدمي فيسبوك ، فكل ما ستحتاجه هو اختيار اسم فريد  للصفحة  و نبذة عنها
-اذا لم تكن مستخدمي فيسبوك فستحتاج لإنشاء حساب على فيسبوك
 
-اضغط على زر "+" و اختار إنشاء صفحة جديدة ، أدخل الاسم الذي اخترته للصفحة و بيانات تفاصيل الصفحة
+If you are already a Facebook user all you'll need to do is to choose a name for your new page, if you aren't you'll need to sign up to facebook first.
+
+Click on "+" and choose crate new "Page" , enter the name and description for your new page.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.33.18%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.33.18%20AM.png)
 
