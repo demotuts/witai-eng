@@ -1,5 +1,3 @@
-<div dir="rtl">
-
 # روبوت دردشة باستخدام wit.ai    
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%2012.45.28%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%2012.45.28%20PM.png)
@@ -203,7 +201,6 @@ https://developers.facebook.com/apps/
 
 
 هذا نموذج للمخرجات التي نحصل عليها من السؤال أعلاه
-</div>
 
 ```
 {
@@ -299,9 +296,6 @@ https://developers.facebook.com/apps/
 ```
 
 
-<div dir="rtl">
-
-
 دورنا الان هو الاستفادة من تلك المخرجات في الاجابة على سؤال العميل ، بمعنى ان نحسب المسافة بين خطي الطول و العرض لكل مدينة ، لحسن الحظ كل تلك الحسابات متوفرة في التطبيق الذي ستقوم بنسخه بضغطة زر واحدة الى حسابك على منصة glitch.com 
 
 منصة glitch تغنينا عن استخدام استضافات و سيرفرات معقدة ، فهي تهئ لنا الربط بسهولة شديدة بين تطبيقنا على wit.ai و فيسبوك Messenger
@@ -313,7 +307,6 @@ https://developers.facebook.com/apps/
 
 ادناه نموذج للمخرجات التي نحصل عليها من تطبيق wit.ai حينما يسأل العميل "ماهو الوقت الان في تونس؟"
 
-</div>
 
 ```
 {
@@ -363,10 +356,9 @@ https://developers.facebook.com/apps/
 }
 ```
 
-<div dir="rtl">
 فقط توجه الى صفحة المشروع
 
-https://glitch.com/~few-quintessential-horesradish
+https://glitch.com/~aeolian-sponge-glade
 
 هو باختصار مشروع مبرمج بلغة `Node.JS`
 
@@ -374,7 +366,7 @@ https://glitch.com/~few-quintessential-horesradish
 و ستقوم المنصة تلقائيا بنسخ المشروع و اضافته الى حسابك و إنشاء عنوان انترنت جديد له ، سيستغرق ذلك بضع دقائق
 
 <!-- Remix Button -->
-<a href="https://glitch.com/edit/?utm_content=project_few-quintessential-horesradish&utm_source=remix_this&utm_medium=button&utm_campaign=glitchButton#!/remix/few-quintessential-horesradish">
+<a href="https://glitch.com/edit/?utm_content=project_aeolian-sponge-glade&utm_source=remix_this&utm_medium=button&utm_campaign=glitchButton#!/remix/aeolian-sponge-glade">
   <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix this" height="33">
 </a>
 
@@ -469,5 +461,3 @@ What's the distance between Beirut and Amman
 تطبيق glitch اعلاه مقتبس من نموذج ل 
 Arnold Scott, Partner Engineer at Facebook 
 https://glitch.com/~dapper-hungry-grapple
-
-</div>
