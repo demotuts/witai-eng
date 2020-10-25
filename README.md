@@ -153,11 +153,11 @@ https://developers.facebook.com/apps/
 و اضغط على "Create App"
 و أختار الاختيار الأول "Manage Business Integrations"
 
-This relates to the (A) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
-
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.55.45%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.55.45%20AM.png)
 
 أختار اسم للتطبيقك على فيسبوك ، غرض التطبيق هو الوصول الى المعلومات الخاصة  بك ، أي "App Purpose" "Yourself or your own business"
+
+This relates to the (A) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.57.24%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.57.24%20AM.png)
 
@@ -168,9 +168,13 @@ This relates to the (A) part in the Facebook [diagram](#3-creating-a-facebook-ap
 بالعودة الى "Dashboard"
 هناك الكثير من المنتجات المرتبطة بفيسبوك ، لكن لتطبيقنا هذه سنختار Messenger
 
+This relates to the (B) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
+
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.58.49%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.58.49%20AM.png)
 
 العملاء سيتواصلون معنا عبر الصفحة التي أنشأناها اعلاه ، عبر خدة الماسنجر ، لذلك نحتاج ان نربط تطبيقنا بتلك الصفحة
+
+This relates to the (C) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.01.57%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.01.57%20PM.png)
 
@@ -182,6 +186,8 @@ This relates to the (A) part in the Facebook [diagram](#3-creating-a-facebook-ap
 
 لأجل إستخدام هذا التطبيق للرد على محادثات العملاء ، نحتاج لإنشاء رمز Token 
 و ذلك بالضغط على "Genrate Token"
+
+This relates to the (C) i) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.05.25%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.05.25%20PM.png)
 
@@ -384,6 +390,8 @@ https://glitch.com/~aeolian-sponge-glade
  نتجه الان الى فيسبوك و الى اعدادات تطبيقنا هناك و تحت عنوان Messenger و تحت settings
 و نختار اضافة webhook
 "Add Callback URL"
+
+This relates to the (C) ii) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.46.07%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.46.07%20PM.png)
 
