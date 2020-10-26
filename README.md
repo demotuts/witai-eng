@@ -377,29 +377,31 @@ https://glitch.com/~aeolian-sponge-glade
 
 in a nutshell, it's a Node.JS end point that will glow our other components together
 
+To copy this project, click on the button below "Remix This" If you're not logged into glitch.com you would want to login.
 
-اذا لم تسجل دخول ، سجل دخولك لمنصة glitch ، كي تنسخ هذا التطبيق و تستخدمه فقط اضغط على زر "Remix Your Own" 
-و ستقوم المنصة تلقائيا بنسخ المشروع و اضافته الى حسابك و إنشاء عنوان انترنت جديد له ، سيستغرق ذلك بضع دقائق
 
 <!-- Remix Button -->
 <a href="https://glitch.com/edit/?utm_content=project_aeolian-sponge-glade&utm_source=remix_this&utm_medium=button&utm_campaign=glitchButton#!/remix/aeolian-sponge-glade">
   <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix this" height="33">
 </a>
 
+Within few minutes glitch will automatically add the project to your account, clone and deploy the app for you witha new URL.
+
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.24.59%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.24.59%20PM.png)
 
-بإمكانك الان فتح التطبيق الذي نسخته من داخل حسابك على glitch 
+Now you can open the project that you have cloned
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.34.15%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.34.15%20PM.png)
 
-اضغط على Share بالجهة اليسرى من الصفحة
+On the left side of the screen click on "Share", and click on the "Live App" tab
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.45.33%20PM%20copy.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.45.33%20PM%20copy.png)
 
-اختار "Live App" هذا كان عنوان تطبيقك الذي تريد ربطه مع فيسبوك
- نتجه الان الى فيسبوك و الى اعدادات تطبيقنا هناك و تحت عنوان Messenger و تحت settings
-و نختار اضافة webhook
-"Add Callback URL"
+This now is the URL that points to your app, click on copy because this URL will be the where the Facebook app will send in the questions from Messenger, so we can forward it to wit.ai and get the output that will help us in generating an answer.
+
+Now we head to the Facebook app, and click on Messenger on the left menu, and Settings 
+
+Find the Webhook section in the page and click on "Add Callback URL"
 
 This relates to the (C) ii) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
@@ -409,69 +411,81 @@ This relates to the (C) ii) part in the Facebook [diagram](#3-creating-a-faceboo
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.48.41%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.48.41%20PM.png)
 
-نلصق العنوان الذي نسخناه من تطبيق glitch.com و نلصقه هنا , لكن نضيف كلمة "/webhook" الى نهاية العنوان، كي يبدوا كما هو في الصورة ، لكن تذكر ان عنوان تطبيق glitch الخاص بك  سيكون مختلفا عن العنوان اعلاه ، تذكر ان تستخدم عناوانك الذي نسخته من glitch
- في المساحة السفلى ادخل كلمة `verifytoken` و هي كلمة اخترناها عشوائيا ، لكن يجب ان تطابق ما سنضيفه لاحقا في ملف الاعدادات في تطبيق glitch
+Paste the URL we've copied earlier from our glitch.com project and add the suffix `/webhook` to the end of the URL, so the correct address is `https://YOUR_PROJECT_URL/webhook`
 
-بعد ادخال ال "Webhook" و ال "Verify Token" بأمكانك الان تحديد متى سينبهك تطبيقك على فيسبوك حين يرسل العميل رسالة او يتواصل بأي صورة، هذه خطوة مهمة للغاية
-نحتاج ان تصريح `pessages` و `pessaging_postbacks`
+Remember that the address to your glitch.com project will be different than the one you see here.
+
+In the field below, "Verify Token" enter `verifytoken`, we choose this randomly it could be any other word or sentence, but we need to be consistent with the one we will enter later in our glitch project. 
+
+After entering the Webhook and Verify Token, now we need to choose when we need to be notified by the Facebook App, we need to be notified when there's a message or action taken by the customer on the Messanger.
+
+So we need the `pessages` and `pessaging_postbacks` 
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.47.30%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.47.30%20PM.png)
 
+Now our Facebook app knows where to forward the questions coming from the Messenger 
 
-الان فيسبوك Messanger  يعرف الى اين يمرر الأسئلة الواردة
+We return now to our glitch.com project to complete its configuration
 
-بالعودة الى التطبيق في موقع glitch.com
- اختار من القائمة اليسرى ملف ".env" و هو الملف الخاص بالاعدادات
-غني عن القول ان مدخلاتك ستختلف عن المدخلات التي تظهر ادناه في الصورة ، اتبع الخطوات المكتوبة ادناه
+From the left menu select the ".env" file, this is where we will enter our configuration
+
+Again it's needless to say that most of the values below will be different than the ones you will enter in your configuration file, just follow along to know where you'll get those values.
 
 [<img src="
 https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.45.15%20PM.png" width="60%"/>](
 https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.45.15%20PM.png)
 
-بعد نسخ التطبيق ستحتاج الى تخصصه ليعمل مع العناصر الاخرى التي جهزتها سابقا ، فقط سنضيف اليه :
-*  كلمة سرية لتأكيد الرمز `FB_VERIFY_TOKEN` ، يمكن ان تكون اي جملة ، لكننا في الخطوة السابقة اخترنا في تطبيق فيسبوك ان تكون `verifytoken`
-*  `WIT_TOKEN` الرمز من wit.ai ، نحصل عليها من صفحة settings من wit.ai
-* صورة شاشة
-*  `FB_APP_SECRET` الرمز السري لتطبيق فيسبوك الذي أنشأناه في الخطوة رقم ٣ 
-* صور للشاشة تظهر جميع الخطوات
-*  `FB_PAGE_TOKEN` الرمز السري لصفحة facebook المرتبطة بالتطبيق الذ أنشأناف في الخطوة رقم ٣
-* صور للشاشة تظهر جميع الخطوات
+To configure the glitch.com project and allow it to work with the other compnents of the chatbot, we will need to enter the following:
+
+*  `FB_VERIFY_TOKEN` in a previous step we have decided that the Veirfy Token will be `verifytoken`
+*  `WIT_TOKEN` this is the wit.ai Token that we copied in step one from wit.ai the Settings page 
+
+
+[<img src="
+https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.23.21%20PM.png" width="60%"/>](
+https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-20%20at%209.23.21%20PM.png)
+
+
+*  `FB_APP_SECRET` The Facbook App Secret that we copied in step 3 
+
+*  `FB_PAGE_TOKEN` The Facebook Page Token that we have generated in step 3
 
 ***
 
 ### 5. Testing our bot using Facebook messenger
 
-الان و بعد ان قمت بكل هذا المجهود ، بامكانك قطف ثماره
-ارجع الى صفحة Facebook التي أنشأتها و اضغط على "View As Visitor"
+All the above hard work has paid off and it's time to use Facebook Messenger and test the chatbot
+
+Head to the Facebook Page that we have created and click on "View As Visitor"
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.28.06%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.28.06%20PM.png)
 
-و سيظهر لك زر المحادثة باستخدام Messenger
+You will see the Messenger button, click on it
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.27.41%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.27.41%20PM.png)
 
- إسأل مثلا عن الوقت في تونس
+To test it, type for example : 
 What's the time in Tunis
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.25.37%20PM.png" width="30%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.25.37%20PM.png)
 
-أو اكتب سؤالا مثل : ما هي المسافة بين بيروت و عمان ، باللغة الانجليزية
-What's the distance between Beirut and Amman
+Or  What's the distance between Beirut and Amman?
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%208.32.06%20PM.png" width="30%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%208.32.06%20PM.png)
 
-### > تذكر فقط ان المدن المتوفرة محدودة في هذا التطبيق
+### > Remember that the number of cities are limited
 
-نستطيع ان نعود الى wit.ai و نراجع جميع الأسئلة التي وصلت للروبوت ، و نستطيع تحسين الأجابات
+At this stage we can review the questions we've asked and wit.ai interpertations of those questions, we can fine tune and retrain the wit.ai app
 
-### > مبروك! لقد طورت للتو روبوت دردشة و ربطته مع فيسبوك Messenger
 
-### اضافات اختيارية للروبوت 
-بامكانك تطوير هذا الروبوت باستخدامه للتواصل مع عملائك على تويتر ، تليجرام او اي منصة اخرى
-كما تتمتع روبوتات wit.ai بخاصية الاستجابة للاوامرالصوتية ، بدلا من كتابة الرسائل النصية.
+### > Congratulations, you've just created a chatbot and connected it to Facebook Messanger 
+
+### For those who want to go further
+
+This chatbot can be used to connect with customers over Twitter , Telegram web or any other platform, and with the right modification it can respond to customers' voices
 
 ***
 
-تطبيق glitch اعلاه مقتبس من نموذج ل 
+The glitch.com application above is inspired by a demo app by 
 Arnold Scott, Partner Engineer at Facebook 
 https://glitch.com/~dapper-hungry-grapple
