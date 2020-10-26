@@ -409,7 +409,7 @@ This relates to the (C) ii) part in the Facebook [diagram](#3-creating-a-faceboo
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.46.49%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.46.49%20PM.png)
 
-[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.48.41%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.48.41%20PM.png)
+[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-25%20at%209.35.20%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-25%20at%209.35.20%20PM.png)
 
 Paste the URL we've copied earlier from our glitch.com project and add the suffix `/webhook` to the end of the URL, so the correct address is `https://YOUR_PROJECT_URL/webhook`
 
@@ -458,20 +458,19 @@ All the above hard work has paid off and it's time to use Facebook Messenger and
 
 Head to the Facebook Page that we have created and click on "View As Visitor"
 
-[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.28.06%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.28.06%20PM.png)
+[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-25%20at%209.30.05%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-25%20at%209.30.05%20PM.png)
 
 You will see the Messenger button, click on it
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.27.41%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.27.41%20PM.png)
 
 To test it, type for example : 
-What's the time in Tunis
+What's the time in Boston?
 
-[<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.25.37%20PM.png" width="30%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%201.25.37%20PM.png)
-
-Or  What's the distance between Beirut and Amman?
+Or  What's the distance between Chicago and Seattle?
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%208.32.06%20PM.png" width="30%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%208.32.06%20PM.png)
+
 
 ### > Remember that the number of cities are limited
 
