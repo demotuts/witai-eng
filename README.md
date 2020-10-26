@@ -140,41 +140,47 @@ Click on "+" and choose crate new "Page" , enter the name and description for yo
 
 ### 3. Creating a Facebook App that uses Messenger
 
-ما فائدة هذه الخطوة؟
+Why?
 
-لاحظ ان wit.ai يمكن ربطها بصفحة في موقع سفريات السلامة على الانترنت او بتطبيقاتها الهاتفية ، لكننا اخترنا لهذه المقالة ربط wit.ai ب Messenger فيسبوك لسهولة عمل ذلك فنحن لن نحتاج تهيئة استضافة للموقع سفريات السلامة او لن نحتاج الى صنع تطبيق هاتف لاجل الاجابة على اسئلة العملاء ، كما انه بسبب انتشار استخدام فيسبوك فأن اكثر العملاء بامكانهم التواصل مع سفريات السلامة عبر ال Messenger
+We can connect our wit.ai app to web page on Safety Travels website, or its mobile app, but for this tutorial we've choosen to connect our wit.ai app to Facebook Messanger. So we don't need to build and host a web page or create a mobile app from scratch.
 
+The other reason is Facebook has a huge user base, and many of Safety Travels clients would be Facebook users, and would likely have Facebook Messanger app on their mobile devices.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%2012.29.38%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%2012.29.38%20PM.png)
 
-لإنشاء هذا التطبيق اتجه الى 
+To create your Facebook app head to
+
 https://developers.facebook.com/apps/
 
-و اضغط على "Create App"
-و أختار الاختيار الأول "Manage Business Integrations"
+click on "Create App"
+
+Then select "Manage Business Integrations"
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.55.45%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.55.45%20AM.png)
 
-أختار اسم للتطبيقك على فيسبوك ، غرض التطبيق هو الوصول الى المعلومات الخاصة  بك ، أي "App Purpose" "Yourself or your own business"
+Select a name for your Facebook app, because you're creating this app to access your own data on Facebook, meaning your Page and the associated Messenger messeges, in the App Purpose field select "Yourself or your own business"
 
 This relates to the (A) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.57.24%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.57.24%20AM.png)
 
-لكل تطبيق في فيسبوك هناك رمز سري خاص بذلك التطبيق ، للحصول على هذا الرمز السري سنذهب الى قسم الاعدادات Settings , Basic
+A new App ID and an App Secret will automatically be generated for your new app, we will need to copy and save the App Secret , because we will need it later on.
+
+We can find it under Settings > Basic
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.44.07%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.44.07%20PM.png)
 
-بالعودة الى "Dashboard"
-هناك الكثير من المنتجات المرتبطة بفيسبوك ، لكن لتطبيقنا هذه سنختار Messenger
+Head back to the Dashboard and you'll be offered many Facebook products to incorporate in your app, for our app we only want to select Messanger
 
 This relates to the (B) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.58.49%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2011.58.49%20AM.png)
 
-العملاء سيتواصلون معنا عبر الصفحة التي أنشأناها اعلاه ، عبر خدة الماسنجر ، لذلك نحتاج ان نربط تطبيقنا بتلك الصفحة
+Customers will reach out to Safety Travels through Facebook Messenger associated with Safety Travels Facebook page.
 
-This relates to the (C) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
+This is why we will need to connect our application to this Safety Travels Page.
+
+This is illustrated in the (C) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.01.57%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.01.57%20PM.png)
 
@@ -184,8 +190,7 @@ This relates to the (C) part in the Facebook [diagram](#3-creating-a-facebook-ap
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.05.10%20PM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-21%20at%2012.05.10%20PM.png)
 
-لأجل إستخدام هذا التطبيق للرد على محادثات العملاء ، نحتاج لإنشاء رمز Token 
-و ذلك بالضغط على "Genrate Token"
+To be able to post messages back to our customers over Messenger, we need a token, we can get one by clicking on "Generate Token"
 
 This relates to the (C) i) part in the Facebook [diagram](#3-creating-a-facebook-app-that-uses-messenger-1)  above.
 
@@ -198,15 +203,17 @@ This relates to the (C) i) part in the Facebook [diagram](#3-creating-a-facebook
 
 ### 4. Cloning a glitch.com projeict that will connect wit.ai with messanger Messenger service
 
-ما فائدة هذه الخطوة؟
+Why?
 
-في الخطوة ١ اعلاه استخدمنا wit.ai للتعرف على ما يقصده العميل و ترجمة ذلك الى مخرجات يمكننا استخدامها في البحث عن اجابة لسؤال العميل . wit.ai لا تعرف الاجابة ، هي فقط تترجم لنا سؤال العميل .
-فمثلا حين يسأل العميل عن "المسافة بين بيروت و عمان" ، تعطينا wit.ai  مخرجات مفادها ان العميل يبحث عن مسافة بين موقعين ، و انه ذكر مدينتين هما "مسقط" و "الكويت" ، كما تشمل المخرجات خط الطول و العرض لكل مدينة.
+Wit.ai is great in interperting what the customer would type, and translate the customers questions into Intents and Entities and produce them as output. But wit.ai cannot answer those questions on its own. 
+
+We will still need to use this categorized output, that we got from step 1 above, to find matching answers.
+
+So for example when a customer asks about "The distance between Chicago and Seattle" then wit.ai will give us an output that reflects the customer has the intent to learn the distance between 2 locations, and the output will include the lattitudes and longitudes of these 2 cities.
 
 [<img src="https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%207.33.52%20AM.png" width="60%"/>](https://storage.googleapis.com/assets2020/Screen%20Shot%202020-10-22%20at%207.33.52%20AM.png)
 
-
-هذا نموذج للمخرجات التي نحصل عليها من السؤال أعلاه
+Below is a sample for the output from wit.ai
 
 ```
 {
@@ -301,17 +308,19 @@ This relates to the (C) i) part in the Facebook [diagram](#3-creating-a-facebook
 }
 ```
 
+Now it's up to us to use the information above to calculate the distance between the 2 cities.
 
-دورنا الان هو الاستفادة من تلك المخرجات في الاجابة على سؤال العميل ، بمعنى ان نحسب المسافة بين خطي الطول و العرض لكل مدينة ، لحسن الحظ كل تلك الحسابات متوفرة في التطبيق الذي ستقوم بنسخه بضغطة زر واحدة الى حسابك على منصة glitch.com 
+Luckily you don't need to do any calculation, our gilitch.com project has all the code needed to calculate the distance.
 
-منصة glitch تغنينا عن استخدام استضافات و سيرفرات معقدة ، فهي تهئ لنا الربط بسهولة شديدة بين تطبيقنا على wit.ai و فيسبوك Messenger
+You can clone and add the glitch.com project to your account with a single click of a button.
 
+We're using glitch because it makes it extremely easy to deploy an app that connects our app on wit.ai and the our Facebook app with Facebook Messenger, without the need for hosting or complicated setups.
 
-التطبيق ايضا يستخدم المخرجات من الاسئلة الخاصة بالوقت مثل "ما هو الوقت الان في تونس؟" لطلب التوقيت المحلي تلقائيا من من خدمة التوقيت من موقع.
+Our chatbot also make use of the output from questions about time, such as "What's the time now in Toronto?" to get the local time for a city from the following API
 
 [worldtimeapi.org/api](http://worldtimeapi.org/api/)
 
-ادناه نموذج للمخرجات التي نحصل عليها من تطبيق wit.ai حينما يسأل العميل "ماهو الوقت الان في تونس؟"
+Below is a sample output for when the customer asks about the time in a certain city
 
 
 ```
@@ -362,11 +371,12 @@ This relates to the (C) i) part in the Facebook [diagram](#3-creating-a-facebook
 }
 ```
 
-فقط توجه الى صفحة المشروع
+To complete this step , just head to the glitch project at
 
 https://glitch.com/~aeolian-sponge-glade
 
-هو باختصار مشروع مبرمج بلغة `Node.JS`
+in a nutshell, it's a Node.JS end point that will glow our other components together
+
 
 اذا لم تسجل دخول ، سجل دخولك لمنصة glitch ، كي تنسخ هذا التطبيق و تستخدمه فقط اضغط على زر "Remix Your Own" 
 و ستقوم المنصة تلقائيا بنسخ المشروع و اضافته الى حسابك و إنشاء عنوان انترنت جديد له ، سيستغرق ذلك بضع دقائق
